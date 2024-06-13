@@ -1,10 +1,11 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    
+
     cardSubtitle: {
         padding: 5,
-        fontSize: 10
+        fontSize: 10,
+
     },
     cardTitle: {
         borderColor: '#fff',
@@ -23,7 +24,9 @@ export const styles = StyleSheet.create({
         height: 100
     },
     cardBorderTextMargin: {
-        marginLeft: -5
+        marginLeft: -15,
+        //Add
+        paddingRight: 10
     },
     cardTextContainer: {
         flexDirection: 'row',
@@ -37,6 +40,13 @@ export const styles = StyleSheet.create({
         flexWrap: "wrap",
         gap: 20,
     },
+
+    id_cardTitle: {
+        paddingTop: 5,
+        paddingBottom: 5,
+        paddingLeft: 10,
+        paddingRight: 20
+    }
 
 });
 

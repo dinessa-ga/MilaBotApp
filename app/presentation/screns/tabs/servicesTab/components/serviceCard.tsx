@@ -18,14 +18,15 @@ const ServiceCardComponent = ({ color, image, name, description }: ServiceSchema
                 <View style={{ flex: 1 }} >
                     <View style={styles.cardTextContainer}>
 
-                        <Text variant="titleSmall" style={[{ color: background }, styles.cardTitle]}>{name}</Text>
+                        <Text variant="titleSmall" style={[{ color: background }, styles.cardTitle, styles.id_cardTitle]}>{name}</Text>
                         <Text variant="titleSmall"
                             style={[
                                 styles.cardTitle,
                                 styles.cardBorderTextMargin,
                                 {
                                     color: theme.colors[color],
-                                    backgroundColor: background
+                                    backgroundColor: background,
+                                    
                                 }
                             ]}>Mi</Text>
                         <Text variant="titleSmall" style={[{ color: background }, styles.cardSubtitle]}>DataCredito</Text>
