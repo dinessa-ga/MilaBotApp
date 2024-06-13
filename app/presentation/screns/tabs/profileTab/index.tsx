@@ -11,9 +11,9 @@ import { ProfileInfo, userData } from './constants/profileInfo';
 
 const ProfileTab = () => {
     const theme = useTheme();
-    const { experianPink, experianViolet } = theme.colors;
+    const { experianPink, experianViolet, background, outline } = theme.colors;
     return (
-        <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>
+        <SafeAreaView style={{ flex: 1, backgroundColor:background }}>
             <View style={styles.container}>
                 <View
                     style={[globlalStyles.justifyCenter,
@@ -40,7 +40,9 @@ const ProfileTab = () => {
                             Object.entries(ProfileInfo).map(([key, info]) => (
                                 <List.Item
                                     key={info.title}
-                                    style={styles.row}
+                                    titleStyle={{ color: outline }}
+                                    descriptionStyle={{ color: outline }}
+                                    style={styles.row }
                                     title={info.title}
                                     description={userData[key]}
                                     left={props => <List.Icon {...props}

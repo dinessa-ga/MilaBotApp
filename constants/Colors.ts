@@ -6,19 +6,20 @@ import { MD3LightTheme as DefaultTheme, MD3LightTheme as DarkTheme } from 'react
 
 const tintColorLight = '#0a7ea4';
 const tintColorDark = '#fff';
-const experianPurpleLight = 'rgb(142, 60, 150)';
-const experianVioletLight = 'rgb(107, 79, 162)';
-const experianBlueLight = 'rgb(78, 87, 169)';
-const experianPinkLight = 'rgb(174, 21, 132)';
-const experianPurpleDark = 'rgb(189, 194, 255)';
-const experianVioletDark = 'rgb(211, 187, 255)';
-const experianBlueDark = 'rgb(253, 169, 255)';
-const experianPinkDark = 'rgb(255, 174, 219)';
-
+const backgroundLight ='#fff'
+const experianPurpleLight = 'rgb(127, 72, 147)';
+const experianVioletLight = 'rgb(126, 72, 149)';
+const experianBlueLight = 'rgb(50, 92, 168)';
+const experianPinkLight = 'rgb(158, 55, 116)';
+const experianPurpleDark = 'rgb(237, 177, 255)';
+const experianVioletDark = 'rgb(234, 178, 255)';
+const experianBlueDark = 'rgb(174, 198, 255)';
+const experianPinkDark = 'rgb(255, 175, 213)';
+const backgroundDark = '#151718';
 export const Colors = {
   light: {
     text: '#11181C',
-    background: '#fff',
+    background: backgroundLight,
     tint: tintColorLight,
     icon: '#687076',
     tabIconDefault: '#687076',
@@ -30,7 +31,7 @@ export const Colors = {
   },
   dark: {
     text: '#ECEDEE',
-    background: '#151718',
+    background: backgroundDark,
     tint: tintColorDark,
     icon: '#9BA1A6',
     tabIconDefault: '#9BA1A6',
@@ -53,20 +54,21 @@ export const PaperTheme = {
       ...DefaultTheme.colors,
       experianBlue: experianBlueLight,
       onExperianBlue: "rgb(255, 255, 255)",
-      experianBlueContainer: "rgb(224, 224, 255)",
-      onExperianBlueContainer: "rgb(2, 8, 101)",
+      experianBlueContainer: "rgb(216, 226, 255)",
+      onExperianBlueContainer: "rgb(0, 26, 66)",
       experianViolet: experianVioletLight,
       onExperianViolet: "rgb(255, 255, 255)",
-      experianVioletContainer: "rgb(234, 221, 255)",
-      onExperianVioletContainer: "rgb(37, 0, 90)",
+      experianVioletContainer: "rgb(247, 216, 255)",
+      onExperianVioletContainer: "rgb(49, 0, 71)",
       experianPurple: experianPurpleLight,
       onExperianPurple: "rgb(255, 255, 255)",
-      experianPurpleContainer: "rgb(255, 214, 251)",
-      onExperianPurpleContainer: "rgb(54, 0, 61)",
+      experianPurpleContainer: "rgb(249, 216, 255)",
+      onExperianPurpleContainer: "rgb(50, 0, 70)",
       experianPink: experianPinkLight,
       onExperianPink: "rgb(255, 255, 255)",
-      experianPinkContainer: "rgb(255, 216, 234)",
-      onExperianPinkContainer: "rgb(60, 0, 43)"
+      experianPinkContainer: "rgb(255, 216, 232)",
+      onExperianPinkContainer: "rgb(61, 0, 39)",
+      background: backgroundLight
     },
   },
   dark: {
@@ -77,21 +79,22 @@ export const PaperTheme = {
     colors: {
       ...DarkTheme.colors,
       experianBlue: experianBlueDark,
-      onExperianBlue: "rgb(30, 38, 120)",
-      experianBlueContainer: "rgb(54, 62, 144)",
-      onExperianBlueContainer: "rgb(224, 224, 255)",
+      onExperianBlue: "rgb(0, 46, 106)",
+      experianBlueContainer: "rgb(18, 68, 143)",
+      onExperianBlueContainer: "rgb(216, 226, 255)",
       experianViolet: experianVioletDark,
-      onExperianViolet: "rgb(59, 29, 113)",
-      experianVioletContainer: "rgb(82, 54, 137)",
-      onExperianVioletContainer: "rgb(234, 221, 255)",
+      onExperianViolet: "rgb(75, 23, 99)",
+      experianVioletContainer: "rgb(100, 48, 123)",
+      onExperianVioletContainer: "rgb(247, 216, 255)",
       experianPurple: experianPurpleDark,
-      onExperianPurple: "rgb(88, 0, 99)",
-      experianPurpleContainer: "rgb(115, 34, 124)",
-      onExperianPurpleContainer: "rgb(255, 214, 251)",
+      onExperianPurple: "rgb(76, 22, 97)",
+      experianPurpleContainer: "rgb(101, 47, 122)",
+      onExperianPurpleContainer: "rgb(249, 216, 255)",
       experianPink: experianPinkDark,
-      onExperianPink:"rgb(97, 0, 72)",
-      experianPinkContainer: "rgb(136, 0, 102)",
-      onExperianPinkContainer: "rgb(255, 216, 234)"
+      onExperianPink: "rgb(98, 0, 66)",
+      experianPinkContainer: "rgb(128, 29, 91)",
+      onExperianPinkContainer: "rgb(255, 216, 232)",
+      background: backgroundDark
     },
   }
 

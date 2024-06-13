@@ -5,10 +5,6 @@ export const globlalStyles = StyleSheet.create({
         padding: 25,
         margin: 25
     },
-    fullScreen: {
-        width: '100%',
-        height: '100%'
-    },
     justifyCenter: {
         display: "flex",
         alignItems: "center",

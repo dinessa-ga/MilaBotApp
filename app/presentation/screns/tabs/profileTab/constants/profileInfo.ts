@@ -1,4 +1,4 @@
-import { ProfileSchema } from "../schemas/profileSchema"
+import  ProfileSchema  from "../schemas/profileSchema"
 
 export const ProfileInfo = {
     name: {
