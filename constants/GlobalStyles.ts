@@ -1,9 +1,16 @@
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 
 export const globlalStyles = StyleSheet.create({
-    cardContainer: {
-        padding: 25,
-        margin: 25
+
+    safeAreaStyle: {
+        padding: 0,
+        flexGrow: 1,
+        flexShrink: 1,
+        flexBasis: 0,
+    
+    },
+    padding: {
+        padding: 20
     },
     justifyCenter: {
         display: "flex",

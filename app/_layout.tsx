@@ -1,15 +1,15 @@
+import { Colors, PaperTheme } from '@/constants/Colors';
+import { globlalStyles } from '@/constants/GlobalStyles';
+import { useColorScheme } from '@/hooks/useColorScheme';
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
-import 'react-native-reanimated';
-
-import { useColorScheme } from '@/hooks/useColorScheme';
 import { PaperProvider } from 'react-native-paper';
-import { PaperTheme } from '@/constants/Colors';
+import 'react-native-reanimated';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
@@ -29,14 +29,23 @@ export default function RootLayout() {
   }
 
   return (
-    <PaperProvider theme={PaperTheme[colorScheme ?? 'light']}>
-      <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-        <Stack>
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-          <Stack.Screen name="+not-found" />
-        </Stack>
-      </ThemeProvider>
-    </PaperProvider>
+    <SafeAreaView
+      edges={['top', 'left', 'right']}
+      style={
+       [ globlalStyles.safeAreaStyle,
+        { backgroundColor: Colors[colorScheme ?? 'light'].safeArea }
+      ]
+      }
+    >
+      <PaperProvider theme={PaperTheme[colorScheme ?? 'light']}>
+        <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+          <Stack>
+            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+            <Stack.Screen name="+not-found" />
+          </Stack>
+        </ThemeProvider>
+      </PaperProvider>
+    </SafeAreaView>
 
   );
 }

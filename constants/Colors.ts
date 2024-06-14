@@ -6,7 +6,7 @@ import { MD3LightTheme as DefaultTheme, MD3LightTheme as DarkTheme } from 'react
 
 const tintColorLight = '#0a7ea4';
 const tintColorDark = '#fff';
-const backgroundLight ='#fff'
+const backgroundLight = '#fff'
 const experianPurpleLight = 'rgb(127, 72, 147)';
 const experianVioletLight = 'rgb(126, 72, 149)';
 const experianBlueLight = 'rgb(50, 92, 168)';
@@ -16,6 +16,7 @@ const experianVioletDark = 'rgb(234, 178, 255)';
 const experianBlueDark = 'rgb(174, 198, 255)';
 const experianPinkDark = 'rgb(255, 175, 213)';
 const backgroundDark = '#151718';
+
 export const Colors = {
   light: {
     text: '#11181C',
@@ -27,7 +28,8 @@ export const Colors = {
     experianBlue: experianBlueLight,
     experianViolet: experianVioletLight,
     experianPurple: experianPurpleLight,
-    experianPink: experianPinkLight
+    experianPink: experianPinkLight,
+    safeArea: "#f2f2f2"
   },
   dark: {
     text: '#ECEDEE',
@@ -39,7 +41,8 @@ export const Colors = {
     experianBlue: experianBlueDark,
     experianViolet: experianVioletDark,
     experianPurple: experianPurpleDark,
-    experianPink: experianPinkDark
+    experianPink: experianPinkDark,
+    safeArea: '#0000'
   },
 };
 
@@ -68,6 +71,10 @@ export const PaperTheme = {
       onExperianPink: "rgb(255, 255, 255)",
       experianPinkContainer: "rgb(255, 216, 232)",
       onExperianPinkContainer: "rgb(61, 0, 39)",
+      experianYellow: "rgb(128, 86, 0)",
+      onExperianYellow: "rgb(255, 255, 255)",
+      experianYellowContainer: "rgb(255, 221, 176)",
+      onExperianYellowContainer: "rgb(40, 24, 0)",
       background: backgroundLight
     },
   },
@@ -94,6 +101,10 @@ export const PaperTheme = {
       onExperianPink: "rgb(98, 0, 66)",
       experianPinkContainer: "rgb(128, 29, 91)",
       onExperianPinkContainer: "rgb(255, 216, 232)",
+      experianYellow: "rgb(254, 186, 75)",
+      onExperianYellow: "rgb(68, 44, 0)",
+      experianYellowContainer: "rgb(97, 64, 0)",
+      onExperianYellowContainer: "rgb(255, 221, 176)",
       background: backgroundDark
     },
   }

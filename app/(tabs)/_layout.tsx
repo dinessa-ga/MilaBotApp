@@ -1,11 +1,8 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
-import Feather from '@expo/vector-icons/Feather';
-
 import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
-import Services from '../presentation/screns/tabs/servicesTab';
+import { Tabs } from 'expo-router';
+import React from 'react';
 
 
 export default function TabLayout() {
@@ -15,13 +12,13 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].experianViolet,
-        headerShown: false,
+        headerShown: false
       }}>
 
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: 'Inicio',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
           ),
@@ -30,7 +27,7 @@ export default function TabLayout() {
 
       <Tabs.Screen
         name="services"
-    
+
         options={{
           title: 'Servicios',
           tabBarIcon: ({ color, focused }) => (

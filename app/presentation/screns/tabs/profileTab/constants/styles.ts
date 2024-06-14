@@ -1,12 +1,6 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    container: {
-        padding: 0,
-        flexGrow: 1,
-        flexShrink: 1,
-        flexBasis: 0,
-    },
     profileAvatarWrapper: {
         position: 'relative',
     },
@@ -49,7 +43,6 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'flex-start',
         height: 50,
-        backgroundColor: '#f2f2f2',
         borderRadius: 8,
         marginBottom: 12,
         paddingLeft: 12,

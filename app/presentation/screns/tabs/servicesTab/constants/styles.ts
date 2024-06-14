@@ -11,7 +11,9 @@ export const styles = StyleSheet.create({
         objectFit:'cover'
     },
     cardLogo: {
-        marginBottom: 10
+        marginBottom: 10,
+        maxWidth: 150,
+        objectFit:'fill'
     },
     cardContent: {
         display: "flex",
