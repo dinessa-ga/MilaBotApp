@@ -2,29 +2,31 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     cardContainer: {
-        margin: 3,
+        margin: 10,
         
     },
     cardImage: {
         width: 85,
         height: 85,
-        resizeMode: 'cover', // 'objectFit' no es una propiedad válida en React Native, usa 'resizeMode'
+        resizeMode: 'cover', // 'objectFit' no es una propiedad válida en React Native
+        marginTop: 10,
+        marginBottom: 10
     },
     
     cardContent: {
         flexDirection: 'row',
-        padding: 5, // Agrega un relleno al contenido de la tarjeta
+        padding: 5, 
     },
    
     cardTextContainer: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between', // Ajusta esto según necesites
-    },
-    cardTextTitle: {
-        flexDirection: 'row',
-        alignItems: 'center',
+        flexDirection: 'column',
         marginLeft: 10,
+        
+    },
+    cardTextTitleContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginTop: -40
          
     },
    
@@ -36,13 +38,19 @@ export const styles = StyleSheet.create({
         paddingLeft: 10,
         paddingRight: 20,
         height: 28,
-                
+        elevation: -1        
     },
     cardLogo: {
-        width: 130, // Define un ancho para el logo
-        height: 130, // Define una altura para el logo
-        resizeMode: 'contain', // Asegúrate de que el logo se ajuste dentro de las dimensiones sin deformarse
-        marginLeft: -25, // Agrega un margen a la izquierda para separarlo del texto
-        elevation: 1
+        width: 130, 
+        height: 130, 
+        resizeMode: 'contain', // Asegura que el logo se ajuste dentro de las dimensiones sin deformarse
+        marginLeft: -25, 
+        
     },
+    cardDescription:{
+        marginTop: -35,//estas medidas son necesarias para  la descripción de las card
+        marginRight: 10,
+        paddingRight: 60,
+        
+    }
 });
