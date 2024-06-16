@@ -15,14 +15,9 @@ const ServiceCardComponent = (service) => {
                     style={styles.cardImage}
                 />
                 <View style={[styles.cardTextContainer]} >
-                    <View style={styles.cardTextTitleContainer}>
-                        <Text  style={[styles.cardTitle, { color: background, fontSize: 12}]}>
-                            {service.name}
-                        </Text>
-                        <Image source={require('../assets/logo_midc.png')} style={styles.cardLogo} />
-                    </View>
-                        <Text style={[styles.cardDescription, { color: background, fontSize: 14}]}>
-                    {service.description}
+                        <Image source={service.name} style={styles.cardLogo} />
+                    <Text style={[styles.cardDescription, { color: background, fontSize: 14}]}>
+                        {service.description}
                     </Text>
                 </View>
             </Card.Content>
