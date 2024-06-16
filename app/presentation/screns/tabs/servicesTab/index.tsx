@@ -1,9 +1,9 @@
-import { SafeAreaView, ScrollView, View } from 'react-native';
-import { AnimatedFAB, FAB, Text, useTheme } from 'react-native-paper';
+import {  ScrollView, View } from 'react-native';
+import {  FAB, Text, useTheme } from 'react-native-paper';
 import ServiceCardComponent from './components/serviceCard';
 import { services } from './constants/servicesInfo';
 import { globlalStyles } from '@/constants/GlobalStyles';
-
+import { router } from 'expo-router';
 const ServicesTab = () => {
     const theme = useTheme();
     const { experianPurple, outline } = theme.colors;
