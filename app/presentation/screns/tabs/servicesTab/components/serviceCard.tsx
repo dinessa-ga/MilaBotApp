@@ -16,7 +16,7 @@ const ServiceCardComponent = (service) => {
                 />
                 <View style={styles.cardTextContainer} >
                     <View style={styles.cardTextTitle}>
-                        <Text variant="bodyLarge" style={{ color: background, fontSize: 12 }}>
+                        <Text  style={[styles.cardTitle, { color: background, fontSize: 12}]}>
                             {service.name}
                         </Text>
                         <Image source={require('../assets/logo_midc.png')} style={styles.cardLogo} />

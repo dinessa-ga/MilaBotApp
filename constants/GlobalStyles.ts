@@ -10,7 +10,7 @@ export const globlalStyles = StyleSheet.create({
     
     },
     padding: {
-        padding: 20
+        padding: 10
     },
     justifyCenter: {
         display: "flex",
