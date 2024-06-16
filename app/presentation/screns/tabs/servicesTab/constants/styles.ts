@@ -1,27 +1,37 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-
     cardContainer: {
-        margin: 20
+        margin: 5,
+        marginTop: 20
     },
     cardImage: {
-        width: 100,
-        height: 100,
-        objectFit:'cover'
-    },
-    cardLogo: {
-        marginBottom: 10,
-        maxWidth: 150,
-        objectFit:'fill'
+        width: 85,
+        height: 85,
+        resizeMode: 'cover',
+        marginTop: 10,
+        marginBottom: 10
     },
     cardContent: {
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        flexWrap: "wrap",
-        gap: 20,
+        flexDirection: 'row',
+        padding: 5, 
     },
-
+    cardTextContainer: {
+        flexDirection: 'column',
+        marginLeft: 10,
+        paddingLeft: 10
+        // ... otros estilos
+    },
+       
+    cardLogo: {
+        width: 175, 
+        resizeMode: 'contain', 
+        
+    },
+    cardDescription:{
+        marginTop:10,         // son necesarios para que encaje en el contener sin sobresalirse
+        marginRight: 10,
+        paddingRight: 70,
+    }
 });
 
