@@ -14,14 +14,14 @@ const ServiceCardComponent = (service) => {
                 <Card.Cover source={service.image}
                     style={styles.cardImage}
                 />
-                <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', styles.id_cardTitle}} >
-                    <View variant="card_titles">
-                        <Text variant="bodyLarge" style={{ color: background }}>
+                <View style={styles.cardTextContainer} >
+                    <View style={styles.cardTextTitle}>
+                        <Text variant="bodyLarge" style={{ color: background, fontSize: 12 }}>
                             {service.name}
                         </Text>
-                        <Image source={require('../assets/logo_midc_white.svg')} style={styles.cardLogo} />
+                        <Image source={require('../assets/logo_midc.png')} style={styles.cardLogo} />
                     </View>
-                    <Text variant="large_description" style={{ color: background }}>
+                    <Text variant="bodyLarge" style={{ color: background, fontSize: 15 }}>
                     {service.description}
                     </Text>
                 </View>
