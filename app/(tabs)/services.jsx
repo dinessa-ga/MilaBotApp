@@ -1,7 +1,8 @@
-import ServicesTab from '../presentation/screns/tabs/servicesTab'
+import ServicesTab from '../../screens/tabs/servicesTab'
  const Profile = () => {
   return (
     <ServicesTab/>
+    
   )
 }
 
