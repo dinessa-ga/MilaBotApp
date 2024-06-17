@@ -35,25 +35,19 @@ En el caso de que no se tenga las herramientas para ejecutar la aplicación, se 
 - [Expo Go](https://expo.dev/go)
 
 
-Si se desea seguir desarrollando la aplicación, se puede empezar revisando la carpeta de app. Este proyecto tiene un enrutamiento basado en archivos, utilizando Expo router [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Si se desea seguir desarrollando la aplicación, se puede empezar revisando la carpeta de screen. Este proyecto tiene un enrutamiento basado en archivos, utilizando Expo router [file-based routing](https://docs.expo.dev/router/introduction).
 
 ## Estructura del proyecto
 ### Desarrollo de aplicación móvil en react native
-
+Desde las carpeta raíz del proyecto están:
+- Constants - Colors.ts: contiene los colores del manual de marca
+- Screens - contiene las pantallas del aplicativo desde para chat y tabs: homeTab, profileTab y servicesTab 
 
 ### Desarrollo de Chatbot en chatlayer
+Fue realizado a través de un diagrama de flujo para luego para pasar el algoritmo al chatlayer.
 
-
+#### Captura de diagrama de flujo
+[Archivo .png del diagrama - ver ](https://drive.google.com/file/d/15WoOi85i4Hl6OHnKpiMUf2uccKdtfiCe/view?usp=sharing)
 
 ## Equipo de desarrollo
 
