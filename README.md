@@ -44,7 +44,8 @@ Desde las carpeta raíz del proyecto están:
 - Screens - contiene las pantallas del aplicativo desde para chat y tabs: homeTab, profileTab y servicesTab 
 
 ### Desarrollo de Chatbot en chatlayer
-Fue realizado a través de un diagrama de flujo para luego para pasar el algoritmo al chatlayer.
+ChatLayer es una herramienta que permite a los usuarios de empresas/corporativos crear y mantener bots de voz y chat de IA para empresas.
+- Documentación general: https://www.sinch.com/es-es/products/customer-engagement/chatlayer/ 
 
 #### Captura de diagrama de flujo
 [Archivo .png del diagrama - ver ](https://drive.google.com/file/d/15WoOi85i4Hl6OHnKpiMUf2uccKdtfiCe/view?usp=sharing)
