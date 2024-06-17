@@ -63,6 +63,9 @@ Luego ubica éste fragmento de código antes de cerrar la etiqueta Body del HTML
 <script type="application/javascript">Chatlayer.init({"channelId": "lxetxz91:666f79b9e24e0b5e7defccdc", "region": "eu-west1-gcp", "position": "right"})</script>
 ```
 
+### Demo del ChatBot
+Éste es el link de prueba del chatbot: https://webchat.chatlayer.ai/embedded/lxetxz91:666f79b9e24e0b5e7defccdc
+
 #### Captura de diagrama de flujo
 [Archivo .png del diagrama - ver ](https://drive.google.com/file/d/15WoOi85i4Hl6OHnKpiMUf2uccKdtfiCe/view?usp=sharing)
 
