@@ -1,4 +1,4 @@
-import HomeTab from '../presentation/screns/tabs/homeTab'
+import HomeTab from '../../screens/tabs/homeTab'
  const HomeScreen = () => {
   return (
     <HomeTab/>

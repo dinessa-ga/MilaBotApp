@@ -1,5 +1,4 @@
-import ServicesTab from '../presentation/screns/tabs/servicesTab'
-import ChatBot from '../presentation/screns/chat'
+import ServicesTab from '../../screens/tabs/servicesTab'
  const Profile = () => {
   return (
     <ServicesTab/>

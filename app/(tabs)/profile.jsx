@@ -1,4 +1,4 @@
-import ProfileTab from '../presentation/screns/tabs/profileTab'
+import ProfileTab from '../../screens/tabs/profileTab'
 const Profile = () => {
     return (
         <ProfileTab />

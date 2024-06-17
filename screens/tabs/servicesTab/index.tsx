@@ -7,6 +7,10 @@ import { router } from 'expo-router';
 const ServicesTab = () => {
     const theme = useTheme();
     const { experianPurple, outline } = theme.colors;
+
+    const onHandleClick = ( ) => {
+        router.push('/chat')
+    }
     return (
 
         <View style={[globlalStyles.safeAreaStyle,
@@ -33,7 +37,7 @@ const ServicesTab = () => {
                     right: 0,
                     bottom: 0,
                 }}
-                onPress={() => console.log('Pressed')}
+                onPress={onHandleClick}
             />
         </View>
     )
