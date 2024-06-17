@@ -1,10 +1,20 @@
-# Welcome to your Expo app 👋
+# Welcome to your MiloBotApp 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Midatacrédito app móvil tiene como finalidad ofrecer diferentes servicios a los ciudadanos centrados en la Historia de crédito (reporte financiero del comportamiento del ciudadano en la utilización de productos
+financieros). 
+
+Buscando así crear un Asesor Digital Financiero a través de un ChatBot con inteligencia artificial que puede atender a las preguntas de los usuarios sobre educación financiera información general, soporte,
+preguntas frecuentes).
+
+Este proyecto fue creado en [Expo](https://expo.dev) con [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Para el desarrollo de la aplicación móvil se integra un chatbot realizado con Chatlayer, lenguaje de programación typescript, componente de UI react-native-paper y para los graficos react-native-gifted-charts.
+
+A continuación está a detalle cómo comenzar a trabajar:
 
 ## Get started
 
-1. Install dependencies
+1. Install dependencies. Node version 20.x.x
+   
 
    ```bash
    npm install
@@ -16,14 +26,16 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
     npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+
+En el caso de que no se tenga las herramientas para ejecutar la aplicación, se puede revisar la documentación para utilizar algunas de las siguientes herramientas:
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
 - [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
 - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- [Expo Go](https://expo.dev/go)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+
+Si se desea seguir desarrollando la aplicación, se puede empezar revisando la carpeta de app. Este proyecto tiene un enrutamiento basado en archivos, utilizando Expo router [file-based routing](https://docs.expo.dev/router/introduction).
 
 ## Get a fresh project
 
@@ -35,16 +47,17 @@ npm run reset-project
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+## Estructura del proyecto
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Equipo de desarrollo
+
+Este proyecto se realizó con la colaboración de:
+
+- Daniela Castrejon
+- Diana Guaiña
+- Laura Falcón
+- Mitchel Arboleda
