@@ -45,7 +45,23 @@ Desde las carpeta raíz del proyecto están:
 
 ### Desarrollo de Chatbot en chatlayer
 ChatLayer es una herramienta que permite a los usuarios de empresas/corporativos crear y mantener bots de voz y chat de IA para empresas.
-- Documentación general: https://www.sinch.com/es-es/products/customer-engagement/chatlayer/ 
+
+Documentación general: https://www.sinch.com/es-es/products/customer-engagement/chatlayer/
+
+Primeros pasos para desarrollar un chatbot: https://docs.chatlayer.ai/quickstart/tutorials/leadzy-tutorial/0.-introduction
+
+### Implementación del chatbot en tu app
+Éste script va ubicado en la sesión de Header del HTML de tu app
+   ```bash
+<script type="application/javascript">
+(function(c,p,_,h){const o=[],r=[];let s,f,i;c[_]={init(...e){s=e;var t={then:n=>(r.push({t:"t",next:n}),t),catch:n=>(r.push({t:"c",next:n}),t)};return t},on(e,t){o.push([e,t])},render(...e){f=e},destroy(...e){i=e}};const g=p.getElementsByTagName("script")[0],l=p.createElement("script");l.async=!1,l.src=h,g.parentNode.insertBefore(l,g),c.__onWebMessengerHostReady__=function(e){if(delete c.__onWebMessengerHostReady__,window[_]=e,s){const t=e.init.apply(e,s);for(let n=0;n<r.length;n++){const a=r[n];a.t==="t"?t.then(a.next):t.catch(a.next)}}i&&e.destroy.call(e,i),f&&e.render.apply(e,f);for(let t=0;t<o.length;t++)e.on.apply(e,o[t])}})(window,document,"Chatlayer","https://storage.googleapis.com/static.dev.europe-west1.gcp.chatlayer.ai/widget/sdk.js");
+</script>
+   ```
+
+Luego ubica éste fragmento de código antes de cerrar la etiqueta Body del HTML de tu app
+```bash
+<script type="application/javascript">Chatlayer.init({"channelId": "lxetxz91:666f79b9e24e0b5e7defccdc", "region": "eu-west1-gcp", "position": "right"})</script>
+```
 
 #### Captura de diagrama de flujo
 [Archivo .png del diagrama - ver ](https://drive.google.com/file/d/15WoOi85i4Hl6OHnKpiMUf2uccKdtfiCe/view?usp=sharing)
