@@ -1,4 +1,4 @@
-# Welcome to your MiloBotApp 👋
+# Welcome to your MilaBotApp - Equipo 1 👋
 
 Midatacrédito app móvil tiene como finalidad ofrecer diferentes servicios a los ciudadanos centrados en la Historia de crédito (reporte financiero del comportamiento del ciudadano en la utilización de productos
 financieros). 
@@ -7,7 +7,7 @@ Buscando así crear un Asesor Digital Financiero a través de un ChatBot con int
 preguntas frecuentes).
 
 Este proyecto fue creado en [Expo](https://expo.dev) con [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-Para el desarrollo de la aplicación móvil se integra un chatbot realizado con Chatlayer, lenguaje de programación typescript, componente de UI react-native-paper y para los graficos react-native-gifted-charts.
+Para el desarrollo de la aplicación móvil se integra un chatbot realizado con Chatlayer, React Native, lenguaje de programación typescript, componente de UI react-native-paper y para los gráficos react-native-gifted-charts.
 
 A continuación está a detalle cómo comenzar a trabajar:
 
@@ -48,8 +48,10 @@ npm run reset-project
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
 ## Estructura del proyecto
+### Desarrollo de aplicación móvil en react native
 
 
+### Desarrollo de Chatbot en chatlayer
 
 
 
